@@ -1,0 +1,79 @@
+@import url('./winter-img.jfif');
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  height: 200vh;
+}
+.container {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+}
+.container-heading {
+  background: white;
+  top: 0;
+}
+
+.title{
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+.container-heading .title h1 {
+  background: url(./winter-img.jfif);
+  background-size: 100vw auto;
+  background-position: center;
+  transform: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: black;
+}
+
+.image {
+  background-image: url(./winter-img.jfif);
+  background-size:100vw auto;
+  background-position: center;
+
+  top: 100vh;
+}
+
+.image .title h1 {
+  color: white;
+}
+
+section {
+  min-height: 100vh;
+  padding: 2em;
+  margin: auto;
+  max-width: 800px;
+}
+
+section h2 {
+  font-family: 'Fraunces', serif;
+}
+
+section p {
+  font-family:"Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
